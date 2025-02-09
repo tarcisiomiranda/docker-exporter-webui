@@ -16,15 +16,15 @@ The metrics exporter for Docker can be found at [tarcisiomiranda/docker-exporter
 
 ### Graph Vis
 
-<img src="static/graph-vis.png" alt="Graph Vis" width="400" height="300">
+<img src="static/graph-vis.png" alt="Graph Vis" width="800">
 
 ### Table
 
-<img src="static/table.png" alt="Table" width="400" height="300">
+<img src="static/table.png" alt="Table" width="800">
 
 ### Consume
 
-<img src="static/consume.png" alt="Consume" width="400" height="300">
+<img src="static/consume.png" alt="Consume" width="800">
 
 ## Prerequisites
 
