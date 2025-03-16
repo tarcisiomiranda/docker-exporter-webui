@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => {
       ? 'https://URL_PRODUCTION'
       : mode === 'homologation'
         ? 'https://URL_HOMOLOGATION'
-        : 'https://ngrok.1timo.com'
+        : 'https://docker-exporter-api.srelab.xyz'
   );
 
   console.log(`[Vite Build] Mode: ${mode}`);
@@ -21,8 +21,10 @@ export default defineConfig(({ mode }) => {
     },
     plugins: [
       react(),
-      mode === 'development',
-    ].filter(Boolean),
+      ...(mode === 'development' ? [
+        /* your development plugins here */
+      ] : []),
+    ],
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "./src"),
