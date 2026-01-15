@@ -13,7 +13,7 @@ RUN pnpm install --no-frozen-lockfile
 
 RUN pnpm run build
 
-FROM nginx:1.27.4-alpine-slim
+FROM nginx:1.29.2-alpine-slim
 
 COPY --from=node_builder /app/dist /usr/share/nginx/html
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
